@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+#name {
+    font-family: 'Rubik', sans-serif;
+    font-size: 130%;
+    color: #51504E;
+}
+
+#adress {
+    font-family: 'Rubik', sans-serif;
+    font-size: 90%;
+    color: #888787;
+}
+
+#phoneNumber {
+    font-family: 'Rubik', sans-serif;
+    font-size: 100%;
+    color: #888787;
+}
+
+#locationSymbole {
+    color: #EBA55A;
+}
+
+#container {
+    position: absolute;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    top: 18%;
+    left: 7%;
+}
+
+
+    

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #888787 !important;
+}
+
+.elementStyle {
+    font-family: 'Rubik', sans-serif;
+    font-size: 90%;
+}
+
+.modal-background {
+    background-color: aliceblue !important;
+}
+
+.searchBar {
+    position: fixed;
+    width: 100%;
+    top: 13%;
+    left: 2%;
+}
+
+#container {
+    position: absolute;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    top: 18%;
+    left: 7%;
+}
+
+#show-modal-btn {
+    margin-top: 5%;
+}
+
+#search-btn {
+    color: #FFF;
+    background-color: #EBA55A;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+    width: 10%;
+}
+
+#show-modal-btn {
+    color: #FFF;
+    background-color: #EBA55A;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+    width: 10%;
+}
+
+#search-txt {
+    width: 10%;
+}

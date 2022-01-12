@@ -1,0 +1,121 @@
+#modalWindow {
+    height: 20%; 
+    width: 15%; 
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 2%; 
+    margin: 2%;
+}
+
+.control {
+    color: aliceblue;
+}
+
+#logo {
+    width: 11%;
+}
+
+#show-modal-btn {
+    background-color: #eba55a;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+    margin-left: 27%;
+}   
+
+#slant {
+    transform: rotate(-15deg); 
+    height: 10%;
+    position: fixed; 
+    top: 30%;
+    left: 21%;
+    color: #888787;
+    font-size: 220% !important;
+}
+
+#big {
+    color: #51504e;
+    font-size: 500% !important;
+    position: fixed;
+    top: 36%;
+    left: 28%;
+}
+
+.is-size-4 {
+    color: #888787;
+}
+
+#mainText {
+    margin-top: 27%;
+    margin-left: 20%;
+    z-index: 3;
+    position: absolute;
+}
+
+#mainTxt {
+    font-size: 120% !important;
+    width: 30%;
+    position: fixed;
+    top: 51%;
+    left: 22%;
+}
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+#pizza {
+    height: 60%;
+    position: fixed; 
+    top: 25%; 
+    right: 13%;
+}
+
+
+/* Login screen modal window */
+#employeeNr {
+    color: aliceblue;
+    margin-bottom: 2%;
+}
+
+#loginBtn {
+    color: #FFF;
+    background-color: #EBA55A !important;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+}
+
+#logoutBtn {
+    color: #FFF;
+    background-color: #888787 !important;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+}
+
+#loginBtnLink {
+    color: #FFF !important;
+    background-color: #EBA55A !important;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+}
+
+#logoutBtnLink {
+    color: #FFF !important;
+    background-color: #888787 !important;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+}
+
+#singleUseCode {
+    margin-bottom: 2%;
+}
+
+#cancelBtn {
+    color: #51504e;
+    background-color: #FFF;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+}
+

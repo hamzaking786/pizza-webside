@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+
+/* Nav bar */
+#navbarstart {
+    justify-content: center;
+}
+
+.navbar-item {
+    color: #EBA55A;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+    padding-top: 1%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    background-color: white;
+    border: white;
+}
+
+#chosen {
+    color: #51504E !important;
+}
+
+#chosen:hover {
+    color: #51504E !important;
+}
+
+.navbar-item:hover {
+    color: #888787 !important;
+}
+
+
+/* Alternative bar */
+#lableTxt {
+  font-family: 'Rubik', sans-serif;
+  font-size: 130%;
+  color: #51504E;
+}
+
+#alt1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 90%;
+  color: #888787;
+}
+
+/* Background details */
+#derp {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.circles {
+    height: 450px;
+    width: 450px;
+    background-color: #fcf4eb;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  #position1 {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 20%;
+    left: -15%;
+  }
+
+  #position2 {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 42%;
+    right: 28%;
+  }
+
+  #position3 {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 90%;
+    left: 5%;
+  }
+
+  /* NAVBAR */
+  .navItemLinks {
+    color: #EBA55A !important;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+    padding-top: 1%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+  }
+
+  .navItemLinks:hover {
+    background-color: #FFF !important;
+    color: #888787 !important;
+  }
+
+  #Logo:hover {
+    background-color: #FFF;
+  }
+
+  #burger {
+    color: #EBA55A;
+    
+  }

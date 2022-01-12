@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansatte</title>
+    <!-- Bulma -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/ansatt2.css">
+    <!-- Script -->
+    <script defer type="module" src="/Scripts/Generators/ansatt2Generator.js"></script>
+    <script defer type="module" src="/Scripts/SearchScripts/ansatt2search.js"></script>
+    <script defer type="module" src="/Scripts/FilterScripts/ansatt2filters.js"></script>
+    <script defer src="Scripts/navbar.js"></script>   
+    <script defer src="Scripts/AnsattModal.js"></script>   
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar has-shadow is-white is-fixed-top">
+        <!-- Logo -->
+        <div class="navbar-brand">
+            <a href="/frontpage.html" class="navbar-item">
+            <img src="/Images/Logo.png" alt="Logo" style="max-height: 70px" class="py-2 px-2 pl-6">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <!-- Navbar menu -->
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar navbar-start">
+                <a href="/restaurant.html" class="navbar-item navItemLinks p-6">Restaurent</a>
+                <a href="/ansatt.html" class="navbar-item navItemLinks p-6" id="chosen">Ansatte</a>
+                <a href="/menu.html" class="navbar-item navItemLinks p-6">Meny</a>
+                <a href="/salg.html" class="navbar-item navItemLinks p-6">Salg</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background circles -->
+    <div id="derp">
+        <div id="position1" class="circles"></div>
+        <div id="position2" class="circles"></div>
+        <div id="position3" class="circles"></div>
+    </div>
+
+    <!-- Search bar -->
+    <section class="column is-12" style="margin-top: 10%;" id="searchBar">
+        <form action=""></form>
+        <div class="field">
+            <label id="lableTxt">Søk etter ansatte</label>
+            <div class="control">
+                <!-- Location checkers -->
+                <label id="alt1" for="Kvadraturen">
+                    <br><input type="radio" id="Kvadraturen"  name="Filter" value="Kvadraturen">
+                    Kvadraturen
+                </label><br>
+                <label id="alt1" for="Fjerdingen">
+                    <br><input type="radio" id="Fjerdingen"  name="Filter" value="Fjerdingen">
+                    Fjerdingen
+                </label><br>
+                <label id="alt1" for="Vulkan">
+                    <br><input type="radio" id="Vulkan"  name="Filter" value="Vulkan">
+                    Vulkan
+                </label><br>
+                <label id="alt1" for="Spikersuppa">
+                    <br><input type="radio" id="Spikersuppa"  name="Filter" value="Spikersuppa">
+                    Spikersuppa
+                </label><br>
+                <!-- Role checkers -->
+                <label id="alt1" for="Daglig leder">
+                    <br><input type="radio" id="managers"  name="Filter" value="Daglig leder">
+                    Daglig leder
+                </label><br>
+                <label id="alt1" for="Fulltid">
+                    <br><input type="radio" id="fullTime"  name="Filter" value="Fulltid">
+                    Fulltid
+                </label><br>
+                <label id="alt1" for="Deltide">
+                    <br><input type="radio" id="partTime"  name="Filter" value="Deltid">
+                    Deltid<br>
+                </label><br>
+                <!-- Search bar -->
+                <input id="search-txt" class="input is-rounded" type="text" placeholder="Søk etter navn">
+            </div>
+            <button class="button is-large is-rounded" id="search-btn">Søk</button> <br>
+            <button class="button is-large is-rounded is-primary btnPlacement" id="show-modal-btn">Legg til</button>
+        </div>
+
+    </section>
+    <!-- Main -->
+    <main id="container">
+        <!-- Container for generated content -->
+        <section id="ansatt2-section" class="columns is-multiline elementStyle"></section>
+    </main>
+
+    <div id="modal" class="modal"  id="modalWindow" >
+
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="column">
+        
+                <div class="field">
+                    <label class="label" for="Navn">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Navn" id="addName">
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label" for="Telefonnummer">Telefon nr</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="123 456 78" id="addNr">
+                    </div>
+                </div>
+        
+                <div class="field">
+                    <label class="label" for="Epost">Epost</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="derp@placeholder.lol">
+                    </div>
+                </div>
+                <div class="field is-grouped">
+        
+                    <label id="derp1" for="Kvadraturen">
+                        <br><input type="radio" id="addKvadraturen"  name="Filter" value="Kvadraturen">
+                        Kvadraturen
+                    </label>
+                    <label id="derp2" for="Fjerdingen">
+                        <br><input type="radio" id="addFjerdingen"  name="Filter" value="Fjerdingen">
+                        Fjerdingen
+                    </label>
+                    <label id="derp3" for="Vulkan">
+                        <br><input type="radio" id="addVulkan"  name="Filter" value="Vulkan">
+                        Vulkan
+                    </label>
+                    <label id="derp4" for="Spikersuppa">
+                        <br><input type="radio" id="addSpikersnuppa"  name="Filter" value="Spikersuppa">
+                        Spikersnuppa
+                    </label>
+        
+                </div>
+                <div class="field is-grouped">
+        
+                    <label id="derp5" for="">
+                        <br><input type="radio" id="addmanagers"  name="Filter" value="manager">
+                        Managers
+                    </label>
+                    <label id="derp6" for="">
+                        <br><input type="radio" id="addfullTime"  name="Filter" value="full time">
+                        full time
+                    </label>
+                    <label id="derp7" for="">
+                        <br><input type="radio" id="addpartTime"  name="Filter" value="part time">
+                        part time
+                    </label>
+                </div>
+        
+                <div class="field is-grouped">
+                    <div class="controll">
+                        <button class="button" id="addEmplyee" onclick="alert('Endringer lagret')"> Lagre endringer</button>
+                    </div>
+                    <div class="controll">
+                        <button class="button" id="cancelBtn"> Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       /* //variables
+       let modalWindow = document.querySelector('#modal');
+       let showModalBtn = document.querySelector('#show-modal-btn');
+       let editBtn = document.querySelector(".editBtn");
+       let cancelBtn = document.querySelector('#cancelBtn');
+       let addEmployeeBtn = document.querySelector('#addEmplyee');
+       let modalBackground = document.querySelector(".modal-background")
+       
+       //functions
+       showModalBtn.addEventListener('click', function(){
+           modalWindow.classList.add('is-active');
+       });
+
+
+       cancelBtn.addEventListener('click', function(){
+           modalWindow.classList.remove('is-active');
+       });
+
+       addEmployeeBtn.addEventListener('click', function(){
+           modalWindow.classList.remove('is-active');
+       });
+      
+       modalBackground.addEventListener('click', function(){
+           modalWindow.classList.remove('is-active');
+       });*/
+   </script>
+
+</body>
+</html>

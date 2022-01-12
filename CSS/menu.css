@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+#container {
+    position: absolute;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    top: 18%;
+    left: 7%;
+}
+
+#name {
+    font-family: 'Rubik', sans-serif;
+    font-size: 130%;
+    color: #51504E;
+}
+
+#ingredience {
+    font-family: 'Rubik', sans-serif;
+    font-size: 90%;
+    color: #888787;
+}
+
+#price {
+    font-family: 'Rubik', sans-serif;
+    font-size: 100%;
+    color: #888787;
+}
+
+#moneySymbole {
+    color: #EBA55A;
+}
+
+#search-btn {
+    color: #FFF;
+    background-color: #EBA55A;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+    width: 10%;
+}
+
+#search-txt {
+    width: 10%;
+}
+
+.searchBar {
+    position: fixed;
+    width: 100%;
+    top: 18%;
+    left: 2%;
+}
+

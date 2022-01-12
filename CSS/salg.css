@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+#container {
+    position: absolute;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    top: 18%;
+    left: 7%;
+}
+
+.elementStyle {
+    font-family: 'Rubik', sans-serif;
+    color: #51504E !important;
+    font-size: 120%;
+    width: 60%;
+}
+.searchBar {
+    position: fixed;
+    width: 100%;
+    top: 18%;
+    left: 2%;
+}

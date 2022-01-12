@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontpage</title>
+    <!-- Bulma -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/frontpage.css">
+    <!-- Script -->
+    <script defer src="Scripts/navbar.js"></script>   
+    <script defer src="Scripts/frontpageModal.js"></script>   
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar has-shadow is-white is-fixed-top">
+        <!-- Logo -->
+        <div class="navbar-brand">
+            <a href="/frontpage.html" class="navbar-item">
+            <img src="/Images/Logo.png" alt="Logo" style="max-height: 70px" class="py-2 px-2 pl-6">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <!-- Navbar menu -->
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar navbar-start">
+                <a href="/restaurant.html" class="navbar-item navItemLinks p-6">Restaurent</a>
+                <a href="/ansatt2.html" class="navbar-item navItemLinks p-6">Ansatte</a>
+                <a href="/menu.html" class="navbar-item navItemLinks p-6">Meny</a>
+                <a href="/salg.html" class="navbar-item navItemLinks p-6">Salg</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background circles -->
+    <div id="derp">
+        <div id="position1" class="circles"></div>
+        <div id="position2" class="circles"></div>
+        <div id="position3" class="circles"></div>
+    </div>
+    
+    <!-- Frontpage content -->
+    <main class="columns">
+        <section class="column is-multiline"  id="mainText">
+            <h3 class="column is-size-2"  id="slant">Den Gyldne</h3>
+            <h1 class="column is-size-1" id="big">Pizza</h1>
+            <p class="column is-size-4" id="mainTxt">
+                Du er nå logget inn som Test bruker 1. </br></br>
+                
+                <button class="button is-large is-rounded is-primary btnPlacement" id="show-modal-btn">Logg ut</button>
+            </p>
+        </section>
+
+        <img id="pizza" src="/Images/Pizza.png" alt="Pizza">
+        <section class="column"></section>
+    </main>
+
+    <!--Login-screen modal window -->
+    <div id="modal" class="modal"  id="modalWindow" >
+
+        <div class="modal-background"></div>
+        <div class="modal-content">
+
+            <!-- Buttons -->
+            <div class="field is-grouped">
+                <p class="control">
+                    <!-- Link destination goes in href-->
+                    <button id="logoutBtn" class="button is-link is-primary is-large is-rounded is-primary" onclick="window.location.href=''">
+                        <a id="logoutBtnLink" href="/frontpageLogin.html">Logg ut</a>
+                        
+                    </button>
+                </p>
+                <p>
+                    <button class="button is-transparent is-large is-rounded" id="cancelBtn">Cancel</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
